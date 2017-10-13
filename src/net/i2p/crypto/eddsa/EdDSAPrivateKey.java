@@ -82,16 +82,16 @@ public class EdDSAPrivateKey implements EdDSAKey, PrivateKey {
      * This implements the following specs:
      *<ul><li>
      * General encoding: https://tools.ietf.org/html/draft-ietf-curdle-pkix-04
-     *</li></li>
+     *</li><li>
      * Key encoding: https://tools.ietf.org/html/rfc8032
      *</li></ul>
-     *</p><p>
+     *<p>
      * This encodes the seed. It will return null if constructed from
      * a spec which was directly constructed from H, in which case seed is null.
-     *</p><p>
+     *<p>
      * For keys in older formats, decoding and then re-encoding is sufficient to
      * migrate them to the canonical encoding.
-     *</p>
+     *<p>
      * Relevant spec quotes:
      *<pre>
      *  OneAsymmetricKey ::= SEQUENCE {
